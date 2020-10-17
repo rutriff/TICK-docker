@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  influxdb:
+    image: quay.io/influxdb/influxdb:2.0.0-rc
+    ports:
+      - "8086:8086"
+    volumes:
+      - ./data/influxdbv2:/root/.influxdbv2
